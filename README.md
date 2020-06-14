@@ -15,7 +15,9 @@ cp credentials.json.tmpl credentials.json
 (Edit credentials.json)
 ```
 
-### Build sources
+(NOTE: Do not publish your `credentials.json`)
+
+### Build
 
 ```
 npm install
