@@ -114,11 +114,11 @@ const Viewer: React.FC<any> = ({content}) => {
     const content_body = content.split(',').pop();
     const response: Promise<any> = submit(content_body);
     response.then(res => {
+      console.log(res);
       setResult({
         text: res.responses[0].fullTextAnnotation.text,
         image: content,
       });
-      console.log(res);
     });
     setPrevContent(content);
   }
